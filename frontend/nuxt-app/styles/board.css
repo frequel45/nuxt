@@ -1,0 +1,339 @@
+.board-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: calc(100vw - 250px);
+}
+
+.board-header,
+.board-second-options {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+.board-header p:first-child {
+  font-size: 1.4rem;
+  font-weight: 500;
+  letter-spacing: 0.8px;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.board-add-people {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.board-add-people p:last-child {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: 500;
+  color: #707070;
+  cursor: pointer;
+}
+.board-add-people p:last-child svg {
+  width: 18px;
+  height: 18px;
+  padding: 1.67px 0.01px 1.67px 0px;
+}
+
+.board-header span:nth-child(2) {
+  font-weight: 300;
+  color: rgb(128, 128, 128);
+}
+
+.board-second-options p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  letter-spacing: 0.8px;
+}
+.board-second-options select {
+  height: 20px;
+  border: 0px;
+  outline: 0;
+}
+.board-all-cards {
+  height: 100%;
+  display: flex;
+  overflow-x: scroll;
+  padding: 0px 2rem;
+  justify-content: space-between;
+  gap: 2rem;
+  overflow-y: hidden;
+}
+
+.board-all-cards .card {
+  width: 400px;
+  height: 100%;
+  border-radius: 15px;
+  padding: 1rem;
+  flex-shrink: 0;
+  background-color: rgb(238, 242, 245);
+  overflow-y: scroll;
+  margin-bottom: 20px;
+}
+.backlog-container {
+  height: 100vh;
+}
+::-webkit-scrollbar {
+  height: 10px;
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  height: 10px;
+  width: 10px;
+  background-color: var(--medium-gray);
+  border-radius: 50px;
+}
+.card .card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-header p:last-child {
+  display: flex;
+  gap: 5px;
+}
+.card .card-header p:first-child {
+  font-size: 17px;
+}
+.card .card-header p svg {
+  font-size: 22px;
+  color: rgb(133, 133, 133);
+}
+.card .card-header p svg:hover {
+  color: var(--black);
+  cursor: pointer;
+}
+.todo-list-container {
+  background-color: white;
+  margin: 1rem 0px;
+  padding: 1rem;
+  width: 100%;
+  border-radius: 20px;
+}
+.todo-list-container-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.left-text {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  color: rgb(133, 133, 133);
+}
+.left-text .alert-circle {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.low {
+  background: #63c05b;
+}
+.high {
+  background-color: var(--accent-pink);
+}
+.moderate {
+  background: #18b0ff;
+}
+.todo-list-container-header svg {
+  cursor: pointer;
+  font-size: 1.6rem;
+}
+.todo-list-container .title {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 1.2rem;
+  cursor: pointer;
+  font-weight: 500;
+  margin-bottom: 1.8rem;
+  width: 40%;
+}
+
+.check-list-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-collapse-expand {
+  width: 21px;
+  height: 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(236, 236, 236);
+  border: none;
+}
+.btn-collapse-expand svg {
+  font-size: 1.125rem;
+  color: gray;
+}
+.checklist-tasks {
+  display: flex;
+  flex-direction: column;
+  max-height: 200px;
+  overflow-y: scroll;
+}
+
+.checklist-task {
+  display: flex;
+  align-items: center;
+  border: 1px solid rgb(226, 226, 226);
+  border-radius: 15px;
+  margin: 1rem 1rem 0rem 0px;
+  padding: 0.7rem 0.8rem;
+  gap: 1rem;
+}
+.all-important-details {
+  font-family: Inter;
+  margin-top: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.due-date {
+  background-color: rgb(226, 226, 226);
+  color: var(--black);
+  font-family: Inter;
+  padding: 0.3rem 0.8rem;
+  border-radius: 10px;
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+.other-details {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 10px;
+}
+.other-details p {
+  font-size: 0.6rem;
+  padding: 0.4rem 0.6rem;
+  color: rgb(118, 117, 117);
+  background-color: rgb(219, 219, 219);
+  font-weight: 600;
+  border-radius: 6px;
+  border: transparent;
+  cursor: pointer;
+}
+.justify-end {
+  justify-content: flex-end;
+}
+
+.todo-list-container {
+  position: relative;
+}
+
+.menu-container {
+  position: absolute;
+  width: 150px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 0.4rem 1rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10rem;
+  right: 0;
+  margin-right: 1rem;
+  z-index: 1;
+}
+
+.menu-container p {
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: all 0.2s ease 0s;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.menu-container p:last-child {
+  color: var(--error-red);
+}
+
+.menu-container p:hover {
+  background-color: rgb(225, 225, 225);
+}
+
+/*  */
+
+.tooltip-title {
+  position: relative;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 1.8rem;
+  width: 60%;
+}
+
+.tooltip-title::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 5px;
+  white-space: nowrap;
+  font-size: 70%;
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s, visibility 0.2s;
+}
+
+.tooltip-title::before {
+  content: "";
+  position: absolute;
+  bottom: 75%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 8px;
+  border-style: solid;
+  border-color: #333 transparent transparent transparent;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s, visibility 0.2s;
+}
+
+.tooltip-title:hover::after,
+.tooltip-title:hover::before {
+  opacity: 1;
+  visibility: visible;
+}
+
+/*  */
+
+.assigned-to-people {
+  margin-left: 5px;
+  background-color: rgb(255, 205, 213);
+  padding: 3px 5px;
+  font-size: 11px;
+  border-radius: 100%;
+  font-weight: 500;
+}
+
+.assigned-to-people.tooltip-title::after{
+  font-size: 100%;
+  text-transform: lowercase;
+}
